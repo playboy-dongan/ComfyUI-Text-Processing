@@ -11,6 +11,7 @@
 多余行压缩：自动清理空白行，让输入更纯净。
 
 📝 文本段落到文本行 (Text to Lines)
+
 长篇大论无法直接给某些需要“逐行处理”的节点使用。
 
 灵活切分：按任意标点符号（如 。 \n ,）切分段落。
@@ -26,8 +27,11 @@
 视觉平衡：确保每行长度趋于一致，极大提升生成图片的文本布局美观度。
 
 🛠 节点说明 (Node Details)
+
 📦 安装指南 (Installation)
+
 方法 1：ComfyUI-Manager (推荐)
+
 点击 ComfyUI 管理器中的 Install via Git URL。
 
 粘贴地址：https://github.com/playboy-dongan/ComfyUI-Text-Processing
@@ -37,7 +41,9 @@
 方法 2：手动克隆
 
 📄 开源协议 (License)
+
 基于 MIT License 开源，你可以自由使用、修改和商用。
+
 
 
 
