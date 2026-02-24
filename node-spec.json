@@ -1,0 +1,13 @@
+{
+    "name": "comfyui-text-processing",
+    "version": "1.0.0",
+    "description": "专业文本处理工具包，包含文本清洗、段落分行、智能长度均衡等功能。",
+    "author": "playboy-dongan",
+    "repository": "https://github.com/playboy-dongan/ComfyUI-Text-Processing",
+    "license": "MIT",
+    "nodes": [
+        "TextCleaner",
+        "TextParagraphToLines",
+        "TextLineBalancer"
+    ]
+}
