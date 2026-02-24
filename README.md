@@ -6,7 +6,7 @@
 
 ## 🌟 核心功能 (Core Features)
 
-### 1. 🧼 文本清洗 (Text Cleaner)
+## 1. 🧼 文本清洗 (Text Cleaner)
 
 * 
 **智能移除**：一键清除文本中的时间戳（如 `00:00`）和各种括号内容（如 `(内容)`、`[内容]`、`【内容】`）。 
@@ -93,4 +93,5 @@ git clone https://github.com/playboy-dongan/ComfyUI-Text-Processing.git
 本项目采用 **MIT License**。
 
 ---
+
 
