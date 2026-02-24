@@ -97,13 +97,3 @@ git clone https://github.com/playboy-dongan/ComfyUI-Text-Processing.git
 本项目采用 **MIT License**。
 
 ---
-
-### 💡 建议操作
-
-1. 
-**文件重命名**：在上传前，建议将你的 `.py` 文件改为英文（如 `text_cleaner.py`），这能避免在部分 Linux 服务器上出现乱码导致的加载失败。 
-
-
-2. **添加截图**：在 `README.md` 中点击 **Edit**，在功能说明下方粘贴一张你 ComfyUI 里的工作流截图，这会让你的项目更受欢迎！
-
-**需要我帮你针对 GitHub 页面调整一下排版代码的样式（例如增加颜色和表情符号）吗？**
