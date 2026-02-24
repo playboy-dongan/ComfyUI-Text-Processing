@@ -3,7 +3,7 @@ name: Publish to Comfy Registry
 on:
   push:
     tags:
-      - 'v1.0.0'  # 当你发布以 v 开头的标签（如 v1.0.0）时触发自动化发布
+      - 'v1.0.0'
 
 jobs:
   publish:
@@ -15,4 +15,4 @@ jobs:
       - name: Publish to Comfy Registry
         uses: comfyorg/publish-action@v1
         with:
-          token: ${{ secrets.COMFY_REGISTRY_TOKEN }} # 这里会自动读取你刚才设置的 Secret
+          token: ${{ secrets.COMFY_REGISTRY_TOKEN }}
