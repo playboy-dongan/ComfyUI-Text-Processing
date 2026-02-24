@@ -1,7 +1,3 @@
-这份 `README.md` 可以通过增加**功能预览图占位符**、**详细参数表**以及**中英双语的使用场景说明**来提升专业度。一个优秀的开源项目自述文件不仅要告诉用户“是什么”，还要告诉用户“怎么用”以及“解决了什么痛点”。
-
-以下是为你重新优化的版本：
-
 ---
 
 # 🚀 ComfyUI Text Processing (专业文本操作工具包)
@@ -97,3 +93,4 @@ git clone https://github.com/playboy-dongan/ComfyUI-Text-Processing.git
 本项目采用 **MIT License**。
 
 ---
+
