@@ -1,0 +1,18 @@
+name: Publish to Comfy Registry
+
+on:
+  push:
+    tags:
+      - 'v1.0.0'  # 当你发布以 v 开头的标签（如 v1.0.0）时触发自动化发布
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publish to Comfy Registry
+        uses: comfyorg/publish-action@v1
+        with:
+          token: ${{ secrets.COMFY_REGISTRY_TOKEN }} # 这里会自动读取你刚才设置的 Secret
