@@ -1,36 +1,109 @@
-\# ComfyUI-Text-Processing 🚀
+这份 `README.md` 可以通过增加**功能预览图占位符**、**详细参数表**以及**中英双语的使用场景说明**来提升专业度。一个优秀的开源项目自述文件不仅要告诉用户“是什么”，还要告诉用户“怎么用”以及“解决了什么痛点”。
+
+以下是为你重新优化的版本：
+
+---
+
+# 🚀 ComfyUI Text Processing (专业文本操作工具包)
+
+这是一个专为 ComfyUI 打造的文本处理节点包，旨在解决长文本排版、提示词清洗以及结构化数据提取等痛点。它能让你的工作流在处理动态文本输入（如 LLM 输出或长篇提示词）时更加优雅、稳定。 
+
+## 🌟 核心功能 (Core Features)
+
+### 1. 🧼 文本清洗 (Text Cleaner)
+
+* 
+**智能移除**：一键清除文本中的时间戳（如 `00:00`）和各种括号内容（如 `(内容)`、`[内容]`、`【内容】`）。 
+
+
+* 
+**白名单机制**：支持自定义保留字符（如 `/:_-`），防止误删关键路径或标识符。 
+
+
+* 
+**格式收紧**：自动压缩多余空行，保持文本布局紧凑。 
 
 
 
-A professional suite of text manipulation nodes for ComfyUI. 
+### 2. 📝 文本段落到文本行 (Text to Lines)
 
-专为 ComfyUI 打造的专业文本处理工具包。
-
-
-
-\## 🛠 Nodes (节点说明)
+* 
+**灵活切分**：支持按自定义分隔符（如句号 `。`）将段落拆分为独立的行。 
 
 
+* 
+**精准统计**：实时统计总行数以及每行字符数，方便后续节点（如字幕生成）进行流控。 
 
-| Node Name (界面名称) | Function (核心功能) |
 
-| :--- | :--- |
-
-| \*\*🧼 Text Cleaner\*\* | Cleans timestamps, brackets, and invalid symbols. (移除时间戳、括号及无效符号) |
-
-| \*\*📝 Text to Lines\*\* | Splits text by custom delimiters while tracking line counts. (按分隔符切分文本并统计字数) |
-
-| \*\*⚖️ Text Balancer\*\* | Intelligently balances line lengths for better UI display. (智能均衡行长，优化排版) |
+* 
+**边界控制**：可自由选择是否在切分结果中保留分隔符。 
 
 
 
-\## 📦 Installation (安装)
+### 3. ⚖️ 智能文本行均衡 (Text Balancer)
+
+* 
+**自适应断句**：设定“目标字数”后，节点会自动在指定区间内寻找最合适的标点符号（如句号、逗号、空格）进行断句。 
+
+
+* 
+**防硬截断**：优先匹配强终止符，避免生硬地从单词或句子中间切断。 
+
+
+* 
+**视觉优化**：极大地改善了 ComfyUI 界面或生成图片中长文本的排版美观度。 
 
 
 
-1\. `cd custom\_nodes`
+---
 
-2\. `git clone https://github.com/your-username/ComfyUI-Text-Processing.git`
+## 🛠 节点参数详情 (Node Parameters)
 
-3\. Restart ComfyUI.
+| 节点 (Node) | 输入参数 (Inputs) | 输出 (Outputs) | 说明 (Description) |
+| --- | --- | --- | --- |
+| **Text Cleaner** | `文本`, `保留字符` | `清洗后的文本` | 自动清理乱码，保留核心信息。 
 
+ |
+| **Text to Lines** | `文本`, `分隔符`, `保留分隔符` | `文本行`, `总行数`, `每行字数` | 将长篇大论转化为结构化行数据。 
+
+ |
+| **Text Balancer** | `文本`, `目标字数` | `均衡文本`, `总行数`, `每行字数` | 智能排版，使每行文字长度趋于一致。 
+
+ |
+
+---
+
+## 📦 安装说明 (Installation)
+
+### 方法 A：ComfyUI-Manager (推荐)
+
+1. 在 **ComfyUI-Manager** 中点击 **Install via Git URL**。
+2. 输入本仓库地址：`https://github.com/playboy-dongan/ComfyUI-Text-Processing`。
+3. 点击安装并重启 ComfyUI。
+
+### 方法 B：手动安装
+
+```bash
+cd Your_ComfyUI/custom_nodes
+git clone https://github.com/playboy-dongan/ComfyUI-Text-Processing.git
+# 重启 ComfyUI 即可
+
+```
+
+---
+
+## 📄 开源协议 (License)
+
+本项目采用 **MIT License**。
+
+---
+
+### 💡 建议操作
+
+1. 
+**文件重命名**：在上传前，建议将你的 `.py` 文件改为英文（如 `text_cleaner.py`），这能避免在部分 Linux 服务器上出现乱码导致的加载失败。 
+
+
+2. **添加截图**：在 `README.md` 中点击 **Edit**，在功能说明下方粘贴一张你 ComfyUI 里的工作流截图，这会让你的项目更受欢迎！
+
+**需要我帮你针对 GitHub 页面调整一下排版代码的样式（例如增加颜色和表情符号）吗？**
