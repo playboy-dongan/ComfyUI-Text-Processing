@@ -1,0 +1,11 @@
+[project]
+name = "comfyui-text-processing"
+description = "Text processing nodes for ComfyUI"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = []
+
+[tool.comfy]
+PublisherId = "playboy-dongan"
+DisplayName = "ComfyUI Text Processing"
+Icon = ""
